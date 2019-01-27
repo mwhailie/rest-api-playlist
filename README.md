@@ -14,7 +14,10 @@ A simple rest api project using NodeJS and MongoDB
 
 ## How to run
 
+Install MongoDB and NodeJS
+
 ```
+mongod
 npm install
 nodemon index
 ```
