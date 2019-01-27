@@ -12,6 +12,28 @@ A simple rest api project using NodeJS and MongoDB
 | PUT  | /api/users/{id} | Update a user with a specified id |
 | DELETE  | /api/users/{id} | Delete a user with a specified id  |
 
+## How to run
+
+```
+npm install
+nodemon index
+```
+
+To create a user
+
+```
+curl -X POST \
+  http://localhost:4000/api/users \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'postman-token: 00ea3dec-ce35-5b05-94da-f705ed4bdc89' \
+  -d '{
+	"name" : "rest-api",
+	"age" : 22,
+	"gender" : false
+}'
+```
+
 ## Reference
 
 [The Net Ninja - REST API Tutorial](https://www.youtube.com/watch?v=BRdcRFvuqsE&list=PL4cUxeGkcC9jBcybHMTIia56aV21o2cZ8)
